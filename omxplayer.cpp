@@ -1291,15 +1291,15 @@ int main(int argc, char *argv[])
 
 
       case KeyConfig::ACTION_DECREASE_VIDEO_DELAY:
-           //auto new_delay = m_player_subtitles.GetDelay() - 250;
+           auto new_delay = m_player_video.GetDelay() - 50;
           DISPLAY_TEXT_SHORT(strprintf("Video delay: %d ms", new_delay));
-          //m_player_subtitles.SetDelay(new_delay);
+          m_player_video.SetDelay(new_delay);
           //PrintSubtitleInfo();
         break;
       case KeyConfig::ACTION_INCREASE_VIDEO_DELAY:
-          //auto new_delay = m_player_subtitles.GetDelay() + 250;
+          auto new_delay = m_player_video.GetDelay() + 50;
           DISPLAY_TEXT_SHORT(strprintf("Video delay: %d ms", new_delay));
-          //m_player_subtitles.SetDelay(new_delay);
+          m_player_video.SetDelay(new_delay);
           //PrintSubtitleInfo();
         break;
 
