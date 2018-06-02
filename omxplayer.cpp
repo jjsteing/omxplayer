@@ -1288,6 +1288,22 @@ int main(int argc, char *argv[])
             strprintf("Audio stream: %d", m_omx_reader.GetAudioIndex() + 1));
         }
         break;
+
+
+      case KeyConfig::ACTION_DECREASE_VIDEO_DELAY:
+           //auto new_delay = m_player_subtitles.GetDelay() - 250;
+          DISPLAY_TEXT_SHORT(strprintf("Video delay: %d ms", new_delay));
+          //m_player_subtitles.SetDelay(new_delay);
+          //PrintSubtitleInfo();
+        break;
+      case KeyConfig::ACTION_INCREASE_VIDEO_DELAY:
+          //auto new_delay = m_player_subtitles.GetDelay() + 250;
+          DISPLAY_TEXT_SHORT(strprintf("Video delay: %d ms", new_delay));
+          //m_player_subtitles.SetDelay(new_delay);
+          //PrintSubtitleInfo();
+        break;
+
+
       case KeyConfig::ACTION_PREVIOUS_CHAPTER:
         if(m_omx_reader.GetChapterCount() > 0)
         {

@@ -26,6 +26,13 @@ int convertStringToAction(string str_action)
         return KeyConfig::ACTION_PREVIOUS_AUDIO;
     if(str_action == "NEXT_AUDIO")
         return KeyConfig::ACTION_NEXT_AUDIO;
+
+    if(str_action == "DECREASE_VIDEO_DELAY")
+        return KeyConfig::ACTION_DECREASE_VIDEO_DELAY;
+    if(str_action == "INCREASE_VIDEO_DELAY")
+        return KeyConfig::ACTION_INCREASE_VIDEO_DELAY;
+
+
     if(str_action == "PREVIOUS_CHAPTER")
         return KeyConfig::ACTION_PREVIOUS_CHAPTER;
     if(str_action == "NEXT_CHAPTER")
@@ -107,6 +114,10 @@ map<int, int> KeyConfig::buildDefaultKeymap()
     keymap['z'] = ACTION_SHOW_INFO;
     keymap['j'] = ACTION_PREVIOUS_AUDIO;
     keymap['k'] = ACTION_NEXT_AUDIO;
+
+    keymap['r'] = ACTION_DECREASE_VIDEO_DELAY;
+    keymap['t'] = ACTION_INCREASE_VIDEO_DELAY;
+
     keymap['i'] = ACTION_PREVIOUS_CHAPTER;
     keymap['o'] = ACTION_NEXT_CHAPTER;
     keymap['n'] = ACTION_PREVIOUS_SUBTITLE;

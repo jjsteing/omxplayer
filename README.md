@@ -145,6 +145,8 @@ Key bindings to control omxplayer while playing:
     right arrow seek +30 seconds
     down arrow  seek -600 seconds
     up arrow    seek +600 seconds
+    r			decrease video delay (- 50 ms)
+    t			increase video delay (+ 50 ms)
 
 ## KEY CONFIG SYNTAX
 

@@ -43,6 +43,8 @@ class KeyConfig
         ACTION_CROP_VIDEO = 34,
         ACTION_PAUSE = 35,
         ACTION_PLAY = 36,
+        ACTION_DECREASE_VIDEO_DELAY=37,
+        ACTION_INCREASE_VIDEO_DELAY=38,
     };
 
     #define KEY_LEFT 0x5b44
